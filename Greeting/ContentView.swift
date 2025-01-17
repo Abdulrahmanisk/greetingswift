@@ -9,15 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack (alignment: .leading) {
+            TextView(
+                text: "Hello There",
+                color: .green
+            )
+            TextView(
+                text: "Welcome to Swift Programming",
+                color: .gray
+            )
+            TextView(
+                text: "Are you ready to,",
+                color: .yellow
+            )
+            TextView(
+                text: "Start Exploring?",
+                color: .red
+            )
+            TextView(
+                text: "Boom.",
+                color: .purple
+            )
+            
+                    
+            
         }
         .padding()
     }
 }
+
 
 #Preview {
     ContentView()
